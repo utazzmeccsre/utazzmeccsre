@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Teszt fizetés – UtazzMeccsre</title>
+  </head>
+  <body style="font-family: system-ui, sans-serif; max-width: 600px; margin: 40px auto;">
+    <h1>Teszt fizetési oldal</h1>
+    <p>
+      Sikeresen eljutottál a <strong>teszt fizetés</strong> végéig. Itt majd a
+      SimplePay bankkártyás fizetőoldala lesz, ha élesben fut a rendszer.
+    </p>
+    <p id="code"></p>
+    <a href="fizetes.html">Vissza a fizetési oldalra</a>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get("code");
+      if (code) {
+        document.getElementById("code").textContent =
+          "Tesztkód, amivel érkeztél: " + code;
+      }
+    </script>
+  </body>
+</html>
