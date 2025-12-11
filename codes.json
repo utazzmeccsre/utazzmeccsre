@@ -13,3 +13,11 @@
   }
   // IDE TUDSZ MAJD ÚJ KÓDOKAT HOZZÁADNI
 }
+{
+  "JEGY-TEST123": {
+    "amount": 25000,
+    "description": "Tesztmeccs FC – Demo United",
+    "buyerName": "Teszt Béla",
+    "customerEmail": "teszt@example.com"
+  }
+}
