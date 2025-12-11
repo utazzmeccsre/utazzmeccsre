@@ -1,0 +1,15 @@
+{
+  "JEGY-8F2K9Q": {
+    "amount": 25000,
+    "description": "Barcelona – Real Madrid",
+    "buyerName": "Kiss Péter",
+    "customerEmail": "vevo1@example.com"
+  },
+  "JEGY-4HD7LM": {
+    "amount": 18000,
+    "description": "Liverpool – Chelsea",
+    "buyerName": "Nagy Dóra",
+    "customerEmail": "vevo2@example.com"
+  }
+  // IDE TUDSZ MAJD ÚJ KÓDOKAT HOZZÁADNI
+}
