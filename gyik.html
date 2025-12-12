@@ -2,473 +2,225 @@
 <html lang="hu">
 <head>
   <meta charset="UTF-8" />
-  <!-- Ha azt szeretnéd, hogy a GYIK oldal látszódjon, töröld a következő sort:
-  <meta http-equiv="refresh" content="0; url=hamarosan.html">
-  -->
-  <meta http-equiv="refresh" content="0; url=hamarosan.html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UtazzMeccsre – GYIK</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 </head>
+
 <body class="bg-gray-50 text-gray-900">
-  <!-- NAVBAR -->
-  <header class="bg-white shadow-md w-full">
-    <div class="container mx-auto flex items-center justify-between px-6 py-4">
-      <!-- Logó -->
-      <a href="index.html" class="flex items-center">
-        <img
-          src="utazzmeccsre-logo.png"
-          alt="UtazzMeccsre logó"
-          class="h-20 w-auto"
-        />
-      </a>
 
-      <!-- Desktop menü -->
-      <nav class="space-x-6 hidden md:flex items-center">
-        <a
-          href="index.html"
-          class="text-gray-700 hover:text-red-600 font-medium transition"
-        >Főoldal</a>
-        <a
-          href="turak.html"
-          class="text-gray-700 hover:text-red-600 font-medium transition"
-        >Túrák</a>
-        <a
-          href="index.html#why-us"
-          class="text-gray-700 hover:text-red-600 font-medium transition"
-        >Miért minket?</a>
-        <a href="rolunk.html" class="text-gray-700 hover:text-red-600 font-medium transition">
-          Rólunk
-        </a>
-        <a
-          href="gyik.html"
-          class="text-red-600 font-semibold transition"
-        >GYIK</a>
-        <a
-          href="index.html#contact"
-          class="text-gray-700 hover:text-red-600 font-medium transition"
-        >Kapcsolat</a>
-        <a
-            href="fizetes.html"
-            class="text-red-600 font-semibold border-b-2 border-red-600 pb-0.5"
-            >Fizetés</a
-          >
-      </nav>
+<!-- NAVBAR -->
+<header class="bg-white shadow-md w-full">
+  <div class="container mx-auto flex items-center justify-between px-6 py-4">
+    <a href="index.html" class="flex items-center">
+      <img src="utazzmeccsre-logo.png" alt="UtazzMeccsre logó" class="h-20 w-auto" />
+    </a>
 
-      <!-- Mobile hamburger -->
-      <button
-        onclick="toggleMenu()"
-        class="md:hidden focus:outline-none text-gray-700 hover:text-red-600 transition"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-7 w-7"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </button>
-    </div>
-
-    <!-- Mobile menü -->
-    <nav
-      id="mobile-menu"
-      class="hidden bg-white border-t border-gray-200 shadow-md md:hidden"
-    >
-      <div class="flex flex-col items-center space-y-3 py-4">
-        <a
-          href="index.html"
-          onclick="toggleMenu()"
-          class="text-gray-700 hover:text-red-600 font-medium"
-        >Főoldal</a>
-        <a
-          href="turak.html"
-          onclick="toggleMenu()"
-          class="text-gray-700 hover:text-red-600 font-medium"
-        >Túrák</a>
-        <a
-          href="index.html#why-us"
-          onclick="toggleMenu()"
-          class="text-gray-700 hover:text-red-600 font-medium"
-        >Miért minket?</a>
-        <a
-          href="rolunk.html"
-          onclick="toggleMenu()"
-          class="text-gray-700 hover:text-red-600 font-medium"
-        >Rólunk</a>
-        <a
-          href="gyik.html"
-          onclick="toggleMenu()"
-          class="text-red-600 font-semibold"
-        >GYIK</a>
-        <a
-          href="index.html#contact"
-          onclick="toggleMenu()"
-          class="text-gray-700 hover:text-red-600 font-medium"
-        >Kapcsolat</a>
-      </div>
+    <nav class="space-x-6 hidden md:flex items-center">
+      <a href="index.html" class="text-gray-700 hover:text-red-600 font-medium">Főoldal</a>
+      <a href="turak.html" class="text-gray-700 hover:text-red-600 font-medium">Túrák</a>
+      <a href="index.html#why-us" class="text-gray-700 hover:text-red-600 font-medium">Miért minket?</a>
+      <a href="rolunk.html" class="text-gray-700 hover:text-red-600 font-medium">Rólunk</a>
+      <a href="gyik.html" class="text-red-600 font-semibold border-b-2 border-red-600 pb-0.5">GYIK</a>
+      <a href="index.html#contact" class="text-gray-700 hover:text-red-600 font-medium">Kapcsolat</a>
+      <a href="fizetes.html" class="text-gray-700 hover:text-red-600 font-medium">Fizetés</a>
     </nav>
-  </header>
 
-  <!-- GYIK tartalom -->
-  <main class="py-16 px-6 md:px-20 bg-white">
-    <h1 class="text-4xl font-extrabold text-center text-gray-800 mb-10">
-      Gyakran Ismételt Kérdések (GYIK)
-    </h1>
+    <button onclick="toggleMenu()" class="md:hidden text-gray-700 hover:text-red-600">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
 
-    <div class="max-w-4xl mx-auto space-y-4">
-      <!-- FAQ 1 -->
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-sm">
-        <button
-          class="w-full flex items-center justify-between px-5 py-4 text-left"
-          onclick="toggleFaq('faq1')"
-        >
-          <span class="font-semibold text-gray-900">
-            Mit tartalmaz az UtazzMeccsre szolgáltatása?
-          </span>
-          <svg
-            id="faq1-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-gray-500 transition-transform"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </button>
-        <div id="faq1" class="px-5 pb-4 pt-0 hidden">
-          <p class="text-gray-700 text-sm md:text-base">
-            Az UtazzMeccsre fő szolgáltatása a
-            <strong>meccsjegyek közvetítése</strong> futballmérkőzésekre, valamint
-            <strong>utazási ötletek és ajánlások</strong> megosztása repülőjegyekről és szállásokról.
-            A repülőjegyeket és szállásokat mindig
-            <strong>közvetlenül a külső szolgáltatóknál</strong>
-            (légitársaságok, szállásfoglaló oldalak, szállásadók) foglalod, nem az UtazzMeccsre rendszeren keresztül.
-          </p>
-        </div>
-      </div>
+  <nav id="mobile-menu" class="hidden bg-white border-t border-gray-200 shadow-md md:hidden">
+    <div class="flex flex-col items-center space-y-3 py-4">
+      <a href="index.html" onclick="toggleMenu()" class="text-gray-700 hover:text-red-600">Főoldal</a>
+      <a href="turak.html" onclick="toggleMenu()" class="text-gray-700 hover:text-red-600">Túrák</a>
+      <a href="index.html#why-us" onclick="toggleMenu()" class="text-gray-700 hover:text-red-600">Miért minket?</a>
+      <a href="rolunk.html" onclick="toggleMenu()" class="text-gray-700 hover:text-red-600">Rólunk</a>
+      <a href="gyik.html" onclick="toggleMenu()" class="text-red-600 font-semibold">GYIK</a>
+      <a href="index.html#contact" onclick="toggleMenu()" class="text-gray-700 hover:text-red-600">Kapcsolat</a>
+      <a href="fizetes.html" onclick="toggleMenu()" class="text-gray-700 hover:text-red-600">Fizetés</a>
+    </div>
+  </nav>
+</header>
 
-      <!-- FAQ 2 -->
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-sm">
-        <button
-          class="w-full flex items-center justify-between px-5 py-4 text-left"
-          onclick="toggleFaq('faq2')"
-        >
-          <span class="font-semibold text-gray-900">
-            Hogyan tudok érdeklődni vagy ajánlatot kérni?
-          </span>
-          <svg
-            id="faq2-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-gray-500 transition-transform"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </button>
-        <div id="faq2" class="px-5 pb-4 pt-0 hidden">
-          <p class="text-gray-700 text-sm md:text-base">
-            Az oldalon található <strong>ajánlatkérő űrlapon</strong> vagy a kihelyezett
-            Google Forms linken keresztül tudsz érdeklődni. Ezután e-mailben felvesszük veled a kapcsolatot,
-            és megbeszéljük, milyen meccsre szeretnél menni, milyen jegytípust keresel, illetve milyen
-            utazási lehetőségeket ajánlunk.
-          </p>
-        </div>
-      </div>
+<!-- GYIK -->
+<main class="py-16 px-6 md:px-20 bg-white">
+  <h1 class="text-4xl font-extrabold text-center mb-10">
+    Gyakran Ismételt Kérdések
+  </h1>
 
-      <!-- FAQ 3 -->
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-sm">
-        <button
-          class="w-full flex items-center justify-between px-5 py-4 text-left"
-          onclick="toggleFaq('faq3')"
-        >
-          <span class="font-semibold text-gray-900">
-            Hogyan történik a fizetés?
-          </span>
-          <svg
-            id="faq3-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-gray-500 transition-transform"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </button>
-        <div id="faq3" class="px-5 pb-4 pt-0 hidden">
-          <p class="text-gray-700 text-sm md:text-base">
-            A meccsjegyek díját <strong>banki átutalással</strong> tudod kifizetni.
-            Az egyeztetés után elküldjük az utaláshoz szükséges adatokat, és a befizetésről
-            <strong>elektronikus számlát</strong> kapsz.
-          </p>
-          <p class="text-gray-700 text-sm md:text-base mt-2">
-            A repülőjegyeket és szállásokat <strong>nem nálunk fizeted</strong>, hanem
-            közvetlenül a kiválasztott légitársaságoknál és szállásfoglaló oldalakon,
-            a saját felületükön keresztül.
-          </p>
-        </div>
-      </div>
+  <div class="max-w-4xl mx-auto space-y-4">
 
-      <!-- FAQ 4 -->
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-sm">
-        <button
-          class="w-full flex items-center justify-between px-5 py-4 text-left"
-          onclick="toggleFaq('faq4')"
-        >
-          <span class="font-semibold text-gray-900">
-            Mikor kapom meg a meccsjegyet?
-          </span>
-          <svg
-            id="faq4-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-gray-500 transition-transform"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </button>
-        <div id="faq4" class="px-5 pb-4 pt-0 hidden">
-          <p class="text-gray-700 text-sm md:text-base">
-            A meccsjegyeket
-            <strong>legkésőbb 7 nappal a mérkőzés előtt</strong> küldjük ki
-            e-ticket formában e-mailben. Ha a klub ennél később adja ki a jegyeket,
-            erről külön tájékoztatunk.
-          </p>
-        </div>
-      </div>
-
-      <!-- FAQ 5 -->
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-sm">
-        <button
-          class="w-full flex items-center justify-between px-5 py-4 text-left"
-          onclick="toggleFaq('faq5')"
-        >
-          <span class="font-semibold text-gray-900">
-            Biztosan hivatalos meccsjegyet kapok?
-          </span>
-          <svg
-            id="faq5-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-gray-500 transition-transform"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </button>
-        <div id="faq5" class="px-5 pb-4 pt-0 hidden">
-          <p class="text-gray-700 text-sm md:text-base">
-            Igen, a jegyeket <strong>hivatalos csatornákon</strong> keresztül szerezzük be
-            (klubok, ligák vagy akkreditált jegyértékesítők). A jegyek minden esetben
-            a mérkőzésre szóló érvényes belépők.
-          </p>
-        </div>
-      </div>
-
-      <!-- FAQ 6 -->
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-sm">
-        <button
-          class="w-full flex items-center justify-between px-5 py-4 text-left"
-          onclick="toggleFaq('faq6')"
-        >
-          <span class="font-semibold text-gray-900">
-            Mi történik, ha módosul a meccs időpontja vagy elhalasztják?
-          </span>
-          <svg
-            id="faq6-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-gray-500 transition-transform"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </button>
-        <div id="faq6" class="px-5 pb-4 pt-0 hidden">
-          <p class="text-gray-700 text-sm md:text-base">
-            A mérkőzések időpontját és esetleges halasztását a rendező szervezet (liga, klub) határozza meg.
-            Ilyen esetben a meccsjegy általában az <strong>új időpontra is érvényes</strong>, vagy a
-            rendező szabályzata szerint kezelik.
-          </p>
-          <p class="text-gray-700 text-sm md:text-base mt-2">
-            A repülőjegy és szállás módosítása vagy lemondása mindig az adott légitársaság és
-            szállásadó feltételei szerint történik, mivel ezeket
-            <strong>közvetlenül náluk foglalod</strong>. Mi információval segítünk, de nem vagyunk
-            szerződő fél a repülőjegyben és szállásban.
-          </p>
-        </div>
-      </div>
-
-      <!-- FAQ 7 -->
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-sm">
-        <button
-          class="w-full flex items-center justify-between px-5 py-4 text-left"
-          onclick="toggleFaq('faq7')"
-        >
-          <span class="font-semibold text-gray-900">
-            Nálatok foglalom a repjegyet és a szállást?
-          </span>
-          <svg
-            id="faq7-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-gray-500 transition-transform"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </button>
-        <div id="faq7" class="px-5 pb-4 pt-0 hidden">
-          <p class="text-gray-700 text-sm md:text-base">
-            Nem. Mi <strong>csak ajánlást és linket</strong> adunk a repülőjegyekhez és szállásokhoz,
-            foglalni mindig <strong>a külső szolgáltatók oldalán</strong> fogsz.
-            Ez azt jelenti, hogy a repjegyre és szállásra vonatkozó szerződés
-            közvetlenül közted és a légitársaság / szállásadó között jön létre,
-            nem az UtazzMeccsre-vel.
-          </p>
-        </div>
-      </div>
-
-      <!-- FAQ 8 -->
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl shadow-sm">
-        <button
-          class="w-full flex items-center justify-between px-5 py-4 text-left"
-          onclick="toggleFaq('faq8')"
-        >
-          <span class="font-semibold text-gray-900">
-            Mi van, ha végül mégsem tudok elutazni?
-          </span>
-          <svg
-            id="faq8-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-gray-500 transition-transform"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </button>
-        <div id="faq8" class="px-5 pb-4 pt-0 hidden">
-          <p class="text-gray-700 text-sm md:text-base">
-            Ha mégsem tudsz elutazni, a meccsjegyek visszaváltása általában
-            <strong>nem lehetséges</strong>, vagy csak a klub / jegyértékesítő feltételei szerint.
-          </p>
-          <p class="text-gray-700 text-sm md:text-base mt-2">
-            A repülőjegy és a szállás lemondása, módosítása az adott szolgáltató saját szabályzata szerint zajlik,
-            mivel ezeket <strong>nem az UtazzMeccsre-n keresztül foglalod</strong>. A részleteket az
-            <a
-              href="aszf.html"
-              class="text-red-600 hover:underline font-semibold"
-            >ÁSZF</a>
-            tartalmazza.
-          </p>
-        </div>
+    <!-- FAQ 1 -->
+    <div class="bg-gray-50 border rounded-2xl">
+      <button class="w-full flex justify-between px-5 py-4" onclick="toggleFaq('faq1')">
+        <span class="font-semibold">Mit csinál az UtazzMeccsre?</span>
+        <span id="faq1-icon">▼</span>
+      </button>
+      <div id="faq1" class="hidden px-5 pb-4">
+        <p>
+          Az UtazzMeccsre hivatalos sporteseményekre szóló
+          <strong>meccsjegyek közvetítésével</strong> foglalkozik.
+          Emellett repülőjegyekhez és szállásokhoz <strong>ajánlásokat és linkeket</strong> biztosít.
+        </p>
       </div>
     </div>
-  </main>
 
-  <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-300 py-10 text-center">
-    <p class="text-lg font-semibold mb-1">UtazzMeccsre</p>
-    <p class="text-sm">
-      Ha kérdésed van, írj:
-      <a
-        href="mailto:utazzmeccsre@gmail.com"
-        class="text-red-500 hover:underline"
-      >utazzmeccsre@gmail.com</a>
+    <!-- FAQ 2 -->
+    <div class="bg-gray-50 border rounded-2xl">
+      <button class="w-full flex justify-between px-5 py-4" onclick="toggleFaq('faq2')">
+        <span class="font-semibold">Hogyan tudok ajánlatot kérni?</span>
+        <span id="faq2-icon">▼</span>
+      </button>
+      <div id="faq2" class="hidden px-5 pb-4">
+        <p>
+          Az ajánlatkérés az oldalon található űrlapon vagy e-mailben történik.
+          Az ajánlatkérés <strong>még nem minősül foglalásnak</strong>.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="bg-gray-50 border rounded-2xl">
+      <button class="w-full flex justify-between px-5 py-4" onclick="toggleFaq('faq3')">
+        <span class="font-semibold">Hogyan történik a fizetés?</span>
+        <span id="faq3-icon">▼</span>
+      </button>
+      <div id="faq3" class="hidden px-5 pb-4">
+        <p>
+          A meccsjegyek ellenértéke <strong>banki átutalással vagy online bankkártyás fizetéssel</strong>
+          (pl. SimplePay) fizethető meg.
+        </p>
+        <p class="mt-2">
+          A repülőjegyeket és szállásokat <strong>nem nálunk fizeted</strong>, hanem közvetlen a külső szolgáltatónál linken keresztül.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 4 -->
+    <div class="bg-gray-50 border rounded-2xl">
+      <button class="w-full flex justify-between px-5 py-4" onclick="toggleFaq('faq4')">
+        <span class="font-semibold">Mikor kapom meg a meccsjegyet?</span>
+        <span id="faq4-icon">▼</span>
+      </button>
+      <div id="faq4" class="hidden px-5 pb-4">
+        <p>
+          A meccsjegyeket <strong>elektronikus formában (e-ticket)</strong> küldjük ki,
+          a rendező vagy jegyértékesítő jegykiadási ütemezése szerint,
+          jellemzően a mérkőzést megelőző napokban.
+        </p>
+      </div>
+    </div>
+    <!-- FAQ 5 (Repjegy + szállás foglalás) -->
+<div class="bg-gray-50 border rounded-2xl">
+  <button class="w-full flex justify-between px-5 py-4" onclick="toggleFaq('faq7')">
+    <span class="font-semibold">Nálatok foglalom a repjegyet és a szállást?</span>
+    <span id="faq7-icon">▼</span>
+  </button>
+  <div id="faq7" class="hidden px-5 pb-4">
+    <p>
+      Nem. Mi <strong>csak ajánlást és linket</strong> adunk a repülőjegyekhez és szállásokhoz,
+      foglalni mindig <strong>a külső szolgáltatók oldalán</strong> fogsz.
+      Ez azt jelenti, hogy a repjegyre és szállásra vonatkozó szerződés
+      közvetlenül közted és a légitársaság / szállásadó között jön létre,
+      nem az UtazzMeccsre-vel.
     </p>
-    <div class="flex justify-center gap-6 mt-4 text-sm">
-      <a href="aszf.html" class="hover:text-white hover:underline">ÁSZF</a>
-      <a href="impresszum.html" class="hover:text-white hover:underline"
-        >Impresszum</a>
-      <a href="adatvedelem.html" class="hover:text-white hover:underline"
-        >Adatvédelmi</a>
-      <a href="gyik.html" class="hover:text-white hover:underline">GYIK</a>
+  </div>
+</div>
+
+
+
+
+    <!-- FAQ 5 -->
+    <div class="bg-gray-50 border rounded-2xl">
+      <button class="w-full flex justify-between px-5 py-4" onclick="toggleFaq('faq5')">
+        <span class="font-semibold">Hivatalos jegyet kapok?</span>
+        <span id="faq5-icon">▼</span>
+      </button>
+      <div id="faq5" class="hidden px-5 pb-4">
+        <p>
+          Igen. A meccsjegyeket <strong>kluboktól, ligáktól vagy akkreditált jegyértékesítőktől</strong>
+          szerezzük be.
+        </p>
+      </div>
     </div>
-    <p class="text-xs text-gray-500 mt-4">© 2025 UtazzMeccsre</p>
-  </footer>
 
-  <!-- JS A VÉGÉN -->
-  <script>
-    window.toggleMenu = function () {
-      var menu = document.getElementById("mobile-menu");
-      if (menu) {
-        menu.classList.toggle("hidden");
-      }
-    };
+    <!-- FAQ 6 -->
+    <div class="bg-gray-50 border rounded-2xl">
+      <button class="w-full flex justify-between px-5 py-4" onclick="toggleFaq('faq6')">
+        <span class="font-semibold">Mi van meccs halasztás esetén?</span>
+        <span id="faq6-icon">▼</span>
+      </button>
+      <div id="faq6" class="hidden px-5 pb-4">
+        <p>
+          A mérkőzés időpontját a rendező határozza meg.
+          A jegy általában az új időpontra is érvényes.
+        </p>
+      </div>
+    </div>
 
-    window.toggleFaq = function (id) {
-      var el = document.getElementById(id);
-      var icon = document.getElementById(id + "-icon");
-      if (!el) return;
+    <!-- FAQ 7 -->
+    <div class="bg-gray-50 border rounded-2xl">
+      <button class="w-full flex justify-between px-5 py-4" onclick="toggleFaq('faq8')">
+        <span class="font-semibold">Visszatéríthető a jegy?</span>
+        <span id="faq8-icon">▼</span>
+      </button>
+      <div id="faq8" class="hidden px-5 pb-4">
+        <p>
+          A meccsjegyek időponthoz kötöttek, ezért általában
+          <strong>nem visszatéríthetők</strong>.
+          A részleteket az <a href="aszf.html" class="text-red-600 underline">ÁSZF</a> tartalmazza.
+        </p>
+      </div>
+    </div>
 
-      el.classList.toggle("hidden");
+  </div>
+</main>
+<script>
+  window.toggleMenu = function () {
+    const menu = document.getElementById("mobile-menu");
+    if (menu) menu.classList.toggle("hidden");
+  };
 
-      if (icon) {
-        icon.classList.toggle("transform");
-        icon.classList.toggle("rotate-180");
-      }
-    };
-  </script>
+  window.toggleFaq = function (id) {
+    const el = document.getElementById(id);
+    const icon = document.getElementById(id + "-icon");
+    if (!el) return;
+
+    el.classList.toggle("hidden");
+
+    // ha van nyíl ikon, fordítsuk
+    if (icon) {
+      icon.classList.toggle("rotate-180");
+    }
+  };
+</script>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-300 py-10 text-center mt-10">
+  <p class="text-lg font-semibold mb-1">UtazzMeccsre</p>
+
+  <p class="text-sm">
+    Ha kérdésed van, írj:
+    <a href="mailto:utazzmeccsre@gmail.com" class="text-red-500 hover:underline">
+      utazzmeccsre@gmail.com
+    </a>
+  </p>
+
+  <div class="flex justify-center gap-6 mt-4 text-sm">
+    <a href="aszf.html" class="hover:text-white hover:underline">ÁSZF</a>
+    <a href="impresszum.html" class="hover:text-white hover:underline">Impresszum</a>
+    <a href="adatvedelem.html" class="hover:text-white hover:underline">Adatvédelmi tájékoztató</a>
+    <a href="gyik.html" class="hover:text-white hover:underline">GYIK</a>
+  </div>
+
+  <p class="text-xs text-gray-500 mt-4">
+    © 2025 UtazzMeccsre – Minden jog fenntartva.
+  </p>
+</footer>
 </body>
 </html>
