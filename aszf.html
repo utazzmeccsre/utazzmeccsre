@@ -1,255 +1,172 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-  <meta charset="UTF-8" />
-  <!-- Ha azt szeretnéd, hogy az ÁSZF oldal látszódjon, töröld a következő sort:
-  <meta http-equiv="refresh" content="0; url=hamarosan.html">
-  -->
-  <meta http-equiv="refresh" content="0; url=hamarosan.html">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Általános Szerződési Feltételek – UtazzMeccsre</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("mobile-menu");
-      if (menu) menu.classList.toggle("hidden");
-    }
-  </script>
-</head>
-<body class="bg-gray-50 text-gray-900">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Általános Szerződési Feltételek – UtazzMeccsre</title>
 
-  <!-- Navigáció -->
-  <header class="bg-white shadow-md w-full">
-    <div class="container mx-auto flex items-center justify-between px-6 py-4">
-      <a href="index.html" class="flex items-center">
-        <img src="utazzmeccsre-logo.png" alt="UtazzMeccsre" class="h-20 w-auto">
-      </a>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
 
-      <!-- Desktop nav -->
-      <nav class="space-x-4 hidden md:flex items-center text-sm font-medium text-gray-700">
-        <a href="index.html" class="hover:text-red-600">Főoldal</a>
-        <a href="turak.html" class="hover:text-red-600">Túrák</a>
-        <a href="index.html#why-us" class="hover:text-red-600">Miért minket?</a>
-        <a href="gyik.html" class="hover:text-red-600">GYIK</a>
-        <a href="rolunk.html" class="hover:text-red-600">Rólunk</a>
-        <a href="#contact" class="hover:text-red-600">Kapcsolat</a>
-        <a
-            href="fizetes.html"
-            class="text-red-600 font-semibold border-b-2 border-red-600 pb-0.5"
-            >Fizetés</a
-          >
-        <span class="border-l h-5 border-gray-300 mx-1"></span>
-        <a href="aszf.html" class="text-red-600">ÁSZF</a>
-        <a href="impresszum.html" class="hover:text-red-600">Impresszum</a>
-        <a href="adatvedelem.html" class="hover:text-red-600">Adatvédelmi tájékoztató</a>
-      </nav>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        if (menu) menu.classList.toggle("hidden");
+      }
+    </script>
+  </head>
 
-      <!-- Mobil hamburger -->
-      <button onclick="toggleMenu()" class="md:hidden text-gray-700 hover:text-red-600">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- NAV -->
+    <header class="bg-white shadow-md w-full">
+      <div
+        class="container mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <a href="index.html">
+          <img src="utazzmeccsre-logo.png" alt="UtazzMeccsre" class="h-20" />
+        </a>
 
-    <!-- Mobil menü -->
-    <nav id="mobile-menu" class="hidden bg-white border-t border-gray-200 shadow-md md:hidden">
-      <div class="flex flex-col items-center space-y-3 py-4 text-sm font-medium">
-        <a href="index.html" onclick="toggleMenu()" class="text-gray-700 hover:text-red-600">Főoldal</a>
-        <a href="turak.html" onclick="toggleMenu()" class="text-gray-700 hover:text-red-600">Túrák</a>
-        <a href="index.html#why-us" onclick="toggleMenu()" class="text-gray-700 hover:text-red-600">Miért minket?</a>
-        <a href="gyik.html" onclick="toggleMenu()" class="text-gray-700 hover:text-red-600">GYIK</a>
-        <a href="rolunk.html" onclick="toggleMenu()" class="text-gray-700 hover:text-red-600">Rólunk</a>
-        <a href="#contact" onclick="toggleMenu()" class="text-gray-700 hover:text-red-600">Kapcsolat</a>
-        <a href="aszf.html" onclick="toggleMenu()" class="text-red-600 font-semibold">ÁSZF</a>
-        <a href="impresszum.html" onclick="toggleMenu()" class="text-gray-700 hover:text-red-600">Impresszum</a>
-        <a href="adatvedelem.html" onclick="toggleMenu()" class="text-gray-700 hover:text-red-600">Adatvédelmi tájékoztató</a>
+        <nav class="hidden md:flex space-x-4 text-sm font-medium">
+          <a href="index.html" class="hover:text-red-600">Főoldal</a>
+          <a href="turak.html" class="hover:text-red-600">Túrák</a>
+          <a href="gyik.html" class="hover:text-red-600">GYIK</a>
+          <a href="rolunk.html" class="hover:text-red-600">Rólunk</a>
+          <a href="fizetes.html" class="hover:text-red-600">Fizetés</a>
+          <a href="aszf.html" class="text-red-600 font-semibold">ÁSZF</a>
+          <a href="impresszum.html" class="hover:text-red-600">Impresszum</a>
+          <a href="adatvedelem.html" class="hover:text-red-600">Adatvédelem</a>
+        </nav>
+
+        <button onclick="toggleMenu()" class="md:hidden">☰</button>
       </div>
-    </nav>
-  </header>
+    </header>
 
-  <!-- Tartalom -->
-  <main class="max-w-4xl mx-auto px-6 py-12">
-    <div class="bg-white rounded-2xl shadow-lg p-8">
-      <h1 class="text-3xl font-extrabold mb-6 text-gray-800">Általános Szerződési Feltételek</h1>
+    <!-- TARTALOM -->
+    <main class="max-w-4xl mx-auto px-6 py-12">
+      <div class="bg-white rounded-2xl shadow-lg p-8">
+        <h1 class="text-3xl font-extrabold mb-6">
+          Általános Szerződési Feltételek
+        </h1>
+        <p class="text-sm text-gray-500 mb-8">Utoljára frissítve: 2025</p>
 
-      <p class="text-sm text-gray-500 mb-6">
-        Utoljára frissítve: 2025
-      </p>
-
-      <div class="space-y-6 text-gray-800 text-sm md:text-base leading-relaxed">
-        <section>
+        <!-- 1 -->
+        <section class="mb-6">
           <h2 class="font-semibold text-lg mb-2">1. A szolgáltató adatai</h2>
           <p>
             Szolgáltató neve / márka: <strong>UtazzMeccsre</strong><br />
-            Üzemeltető: Koter Kristóf (egyéni vállalkozó – a vállalkozás adatai az impresszumban kerülnek feltüntetésre)<br />
+            Üzemeltető: Koter Kristóf e.v.<br />
+            (adószám, székhely, nyilvántartási szám: lásd Impresszum)<br />
             E-mail:
-            <a href="mailto:utazzmeccsre@gmail.com" class="text-red-600 hover:underline">
-              utazzmeccsre@gmail.com
-            </a>
+            <a href="mailto:utazzmeccsre@gmail.com" class="text-red-600"
+              >utazzmeccsre@gmail.com</a
+            >
           </p>
           <p class="mt-2 text-xs text-gray-500">
-            Fontos: az UtazzMeccsre nem minősül utazási irodának, utazási csomagot nem értékesít.
+            Az UtazzMeccsre nem minősül utazási irodának, és nem értékesít
+            utazási csomagot.
           </p>
         </section>
 
-        <section>
+        <!-- 2 -->
+        <section class="mb-6">
           <h2 class="font-semibold text-lg mb-2">2. A szolgáltatás jellege</h2>
           <p>
-            Az UtazzMeccsre egy online felület, amelynek fő célja, hogy
-            <strong>hivatalos meccsjegyeket</strong> közvetítsen sporteseményekre, és
-            <strong>utazással kapcsolatos ajánlásokat, információkat</strong> nyújtson
-            repülőjegyek és szállások kiválasztásához.
+            Az UtazzMeccsre hivatalos sporteseményekre szóló
+            <strong>meccsjegyek közvetítésével</strong> foglalkozik.
+            A weboldalon megjelenő repülőjegy- és szállásajánlások kizárólag
+            tájékoztató jellegűek.
           </p>
           <p class="mt-2">
-            A weboldalon megjelenő repülőjegy- és szállásinformációk
-            <strong>pusztán ajánlások</strong>. A foglalás minden esetben
-            <strong>külső szolgáltatók</strong> (légitársaságok, szállásfoglaló oldalak) rendszerében történik,
-            így a felhasználó közvetlenül ezekkel a szolgáltatókkal köt szerződést.
-          </p>
-          <p class="mt-2 font-semibold">
-            Az UtazzMeccsre nem szervez utazási csomagot, nem ad el repülőjegyet és szállást saját néven,
-            és nem minősül a vonatkozó jogszabályok szerinti utazási irodának.
+            A repülőjegyek és szállások foglalása minden esetben
+            <strong>külső szolgáltató</strong>
+            (légitársaság, szállásfoglaló oldal) rendszerében történik,
+            ezekre az UtazzMeccsre nem köt szerződést.
           </p>
         </section>
 
-        <section>
-          <h2 class="font-semibold text-lg mb-2">3. Ajánlatkérés és megrendelés</h2>
+        <!-- 3 -->
+        <section class="mb-6">
+          <h2 class="font-semibold text-lg mb-2">
+            3. Ajánlatkérés és szerződéskötés
+          </h2>
           <p>
-            A felhasználó a weboldalon elhelyezett űrlap(ok) vagy hivatkozott űrlap (pl. Google Forms) segítségével
-            tud ajánlatot kérni meccsjegyekre és kapcsolódó utazási javaslatokra.
-          </p>
-          <p class="mt-2">
-            Az ajánlatkérés elküldése <strong>nem minősül foglalásnak</strong>. A Szolgáltató az ajánlatkérés
-            beérkezését követően e-mailben veszi fel a kapcsolatot a felhasználóval, pontosítja az igényeket,
-            majd részletes tájékoztatást ad a jegyárakról és az elérhető utazási lehetőségekről.
-          </p>
-          <p class="mt-2">
-            A meccsjegyekre vonatkozó szerződés a Szolgáltató és a felhasználó között akkor jön létre, amikor
-            a felhasználó a meccsjegyekre vonatkozó ajánlatot írásban (pl. e-mailben) elfogadja, és az abban
-            szereplő díjat a megadott határidőig megfizeti.
+            Az ajánlatkérés nem minősül foglalásnak.
+            A meccsjegyekre vonatkozó szerződés akkor jön létre,
+            amikor a felhasználó az e-mailben megküldött ajánlatot elfogadja
+            és a meccsjegy ellenértékét megfizeti.
           </p>
         </section>
 
-        <section>
+        <!-- 4 -->
+        <section class="mb-6">
           <h2 class="font-semibold text-lg mb-2">4. Fizetési feltételek</h2>
           <p>
-            A meccsjegyek ellenértékét a felhasználó általában banki átutalással fizeti meg, a Szolgáltató
-            által megküldött díjbekérő vagy számla alapján. A fizetés módja és határideje minden esetben az
-            egyedi ajánlatban kerül meghatározásra.
+            A meccsjegyek ellenértéke banki átutalással vagy online bankkártyás
+            fizetéssel (pl. SimplePay rendszeren keresztül) fizethető meg
+            az egyedi ajánlatban vagy a fizetési oldalon megadott módon.
           </p>
           <p class="mt-2">
-            Amennyiben a felhasználó a meghatározott határidőig nem teljesíti a fizetést, a Szolgáltató
-            jogosult a megrendelést törölni, illetve a jegyfoglalást feloldani.
+            A Szolgáltató a befizetésről jogszabályoknak megfelelő számlát állít ki.
+            Nem teljesített fizetés esetén a Szolgáltató jogosult
+            a megrendelést törölni.
           </p>
         </section>
 
-        <section>
-          <h2 class="font-semibold text-lg mb-2">5. Lemondás, módosítás</h2>
+        <!-- 5 -->
+        <section class="mb-6">
+          <h2 class="font-semibold text-lg mb-2">5. Lemondás és elállás</h2>
           <p>
-            A meccsjegyekre – jellegükből adódóan – általában <strong>nem vonatkozik elállási jog</strong>,
-            és a legtöbb esetben nem visszatéríthetők. A konkrét feltételekről az egyedi ajánlat tartalmaz
-            tájékoztatást.
+            A meccsjegyek időponthoz kötött szabadidős szolgáltatásnak
+            minősülnek, ezért a felhasználót elállási jog általában nem illeti meg.
+            A meccsjegyek jellemzően nem visszatéríthetők.
           </p>
           <p class="mt-2">
-            Amennyiben a foglaláshoz kapcsolódóan a felhasználó már külső szolgáltatónál (légitársaság,
-            szállásfoglaló oldal stb.) is végzett foglalást, a repülőjegyekre és szállásokra vonatkozó
-            lemondási és módosítási feltételeket az adott szolgáltató szerződési feltételei határozzák meg.
-            Ezekért az UtazzMeccsre nem felel.
+            Meccs elhalasztása, időpont- vagy helyszínváltozása esetén
+            a rendező vagy hivatalos jegyértékesítő szabályai az irányadók.
+            A Szolgáltató a mérkőzés időpontjának módosítására nincs befolyással.
           </p>
         </section>
 
-        <section>
-          <h2 class="font-semibold text-lg mb-2">6. Felelősségkorlátozás</h2>
+        <!-- 6 -->
+        <section class="mb-6">
+          <h2 class="font-semibold text-lg mb-2">6. Jegyátadás</h2>
           <p>
-            A Szolgáltató törekszik arra, hogy a weboldalon szereplő információk, árak, meccsidőpontok
-            és egyéb adatok naprakészek és pontosak legyenek, azonban az esetleges elírásokért, változásokért
-            (pl. mérkőzés időpontjának módosítása, rendezvény halasztása) közvetlen felelősséget nem vállal.
-          </p>
-          <p class="mt-2">
-            A repülőjegyek és szállások foglalása nem a Szolgáltatón keresztül történik, így azok
-            minőségéért, módosíthatóságáért, törléséért vagy bármely hibájáért a Szolgáltató nem felelős.
-            Ezekkel kapcsolatban a felhasználó és a külső szolgáltató között jön létre jogviszony.
+            A meccsjegyek átadása elektronikus formában (e-ticket) történik,
+            a rendező/jegyértékesítő jegykiadási ütemezésétől függően,
+            jellemzően a mérkőzést megelőző napokban.
           </p>
         </section>
 
-        <section>
-          <h2 class="font-semibold text-lg mb-2">7. Szerzői jogok</h2>
+        <!-- 7 -->
+        <section class="mb-6">
+          <h2 class="font-semibold text-lg mb-2">7. Repülőjegy és szállás</h2>
           <p>
-            A weboldalon megjelenő tartalmak (szövegek, képek, grafikai elemek) az UtazzMeccsre vagy
-            partnerei tulajdonát képezik, vagy jogszerű felhasználási engedély alapján kerülnek megjelenítésre.
-            A tartalmak engedély nélküli másolása, módosítása vagy terjesztése tilos.
+            A repülőjegyeket és szállásokat a felhasználó közvetlenül
+            a külső szolgáltatónál vásárolja meg.
+            Ezekért az UtazzMeccsre nem vállal felelősséget,
+            a kapcsolódó szerződés a felhasználó és a külső szolgáltató között jön létre.
           </p>
         </section>
 
+        <!-- 8 -->
         <section>
           <h2 class="font-semibold text-lg mb-2">8. Kapcsolat</h2>
           <p>
-            Az ÁSZF-fel vagy a szolgáltatással kapcsolatos kérdések esetén az alábbi elérhetőségen
-            tudsz kapcsolatba lépni velünk:
-          </p>
-          <p class="mt-1">
             E-mail:
-            <a href="mailto:utazzmeccsre@gmail.com" class="text-red-600 hover:underline">
+            <a href="mailto:utazzmeccsre@gmail.com" class="text-red-600">
               utazzmeccsre@gmail.com
             </a>
           </p>
         </section>
-
-        <!-- ÚJ 9. pont: meccsjegy nálad, repjegy/szállás linkként -->
-        <section>
-          <h2 class="font-semibold text-lg mb-2">9. Meccsjegyek megvásárlása, repülőjegy- és szállásajánlások</h2>
-
-          <h3 class="font-semibold mt-2 mb-1">9.1 Meccsjegyek megvásárlása</h3>
-          <p>
-            Az UtazzMeccsre fő szolgáltatása hivatalos meccsjegyek közvetítése sporteseményekre.
-            A meccsjegyek ellenértékét a felhasználó közvetlenül a Szolgáltatónak fizeti meg
-            (általában banki átutalással), a Szolgáltató pedig a befizetésről számlát állít ki,
-            és a meccsjegyet e-mailben vagy egyéb elektronikus formában eljuttatja a felhasználónak.
-          </p>
-          <p class="mt-2">
-            A meccsjegyre vonatkozó szerződés a Szolgáltató és a felhasználó között jön létre.
-          </p>
-
-          <h3 class="font-semibold mt-4 mb-1">9.2 Repülőjegy- és szállásajánlások</h3>
-          <p>
-            Az UtazzMeccsre a meccsjegyekhez kapcsolódóan repülőjegy- és szállásajánlásokat is megjeleníthet
-            (pl. konkrét járatokra vagy szállásokra mutató linkek formájában).
-          </p>
-          <p class="mt-2">
-            Fontos, hogy:
-          </p>
-          <ul class="list-disc list-inside mt-1 space-y-1">
-            <li>a repülőjegyet és a szállást a felhasználó <strong>nem az UtazzMeccsre-től vásárolja meg</strong>,</li>
-            <li>a felhasználó minden esetben <strong>külső szolgáltató</strong> (légitársaság, szállásfoglaló oldal, szállásadó stb.) weboldalán végzi a foglalást,</li>
-            <li>a repülőjegyre és a szállásra vonatkozó szerződés <strong>közvetlenül</strong> a felhasználó és az adott külső szolgáltató között jön létre,</li>
-            <li>a repülőjegy és szállás ellenértékét a felhasználó <strong>közvetlenül a külső szolgáltatónak</strong> fizeti meg, nem az UtazzMeccsre részére.</li>
-          </ul>
-          <p class="mt-2 text-sm text-gray-700">
-            Az UtazzMeccsre nem minősül utazási irodának, nem értékesít utazási csomagot, és nem vállal felelősséget
-            a külső szolgáltatók által nyújtott szolgáltatásokért (például járattörlés, késés, szállásminőség,
-            túlfoglalás stb.). Ezekért a külső szolgáltató általános szerződési feltételei az irányadók.
-          </p>
-        </section>
-
       </div>
-    </div>
-  </main>
+    </main>
 
-  <!-- Footer -->
-  <footer id="contact" class="bg-gray-900 text-gray-300 py-10 text-center mt-10">
-    <p class="text-lg font-semibold mb-1">UtazzMeccsre</p>
-    <p class="text-sm">
-      Ha kérdésed van, írj nekünk:
-      <a href="mailto:utazzmeccsre@gmail.com" class="text-red-500 hover:underline">utazzmeccsre@gmail.com</a>
-    </p>
-    <div class="flex justify-center gap-6 mt-4 text-sm">
-      <a href="aszf.html" class="hover:text-white hover:underline">ÁSZF</a>
-      <a href="impresszum.html" class="hover:text-white hover:underline">Impresszum</a>
-      <a href="adatvedelem.html" class="hover:text-white hover:underline">Adatvédelmi tájékoztató</a>
-    </div>
-    <p class="text-xs text-gray-500 mt-4">© 2025 UtazzMeccsre – Minden jog fenntartva.</p>
-  </footer>
-</body>
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-8 text-center mt-10">
+      <p class="font-semibold">UtazzMeccsre</p>
+      <p class="text-sm">© 2025 – Minden jog fenntartva.</p>
+    </footer>
+  </body>
 </html>
