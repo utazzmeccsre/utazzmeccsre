@@ -4,66 +4,104 @@
   <!-- Főoldal -->
   <url>
     <loc>https://utazzmeccsre.hu/</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Fő tartalmi oldalak -->
   <url>
     <loc>https://utazzmeccsre.hu/turak.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Országoldalak -->
   <url>
     <loc>https://utazzmeccsre.hu/anglia.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://utazzmeccsre.hu/francia.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://utazzmeccsre.hu/nemetorszag.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://utazzmeccsre.hu/olaszorszag.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://utazzmeccsre.hu/spania.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Egyéb csapatok -->
   <url>
     <loc>https://utazzmeccsre.hu/egyebcsapatok.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Rólunk -->
+  <!-- Információs oldalak -->
   <url>
     <loc>https://utazzmeccsre.hu/rolunk.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- GYIK -->
   <url>
     <loc>https://utazzmeccsre.hu/gyik.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
-  <!-- Jogi / infó oldalak -->
+  <url>
+    <loc>https://utazzmeccsre.hu/fizetes.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Jogi oldalak -->
   <url>
     <loc>https://utazzmeccsre.hu/aszf.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
+
   <url>
     <loc>https://utazzmeccsre.hu/impresszum.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
+
   <url>
     <loc>https://utazzmeccsre.hu/adatvedelem.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
